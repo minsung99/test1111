@@ -111,7 +111,7 @@ const ChatRoom = () => {
 
   // 웹소켓 연결 설정
   const connect = () => {
-    const socket = new WebSocket("ws://backend:8080/ws");
+    const socket = new WebSocket("ws://localhost:8080/ws");
     stompClient.current = Stomp.over(socket);
     stompClient.current.connect({}, onConnected, onError);
   }
