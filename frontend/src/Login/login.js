@@ -13,7 +13,7 @@ function Login() {
 
         try {
             // 로그인 API 호출
-            const resUser = await axios.get(`/users/${email}/${password}`);
+            const resUser = await axios.get(`http://backend:8080/users/${email}/${password}`);
             //const resChatRooms = await axios.get(`/chatrooms/login/${resUser.data.id}`);
 
             // 성공 처리
